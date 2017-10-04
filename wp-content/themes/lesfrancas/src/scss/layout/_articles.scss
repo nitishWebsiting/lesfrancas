@@ -1,0 +1,35 @@
+.article {
+    width: 90%;
+    margin: auto;
+    @include breakmin($tablet) {
+        width: 580px;
+    }
+    @include breakmin(991px) {
+        width: 90%
+    }
+
+    .author{
+    	float:right;
+		img{
+			border-radius: 50%;
+            width: 50px;
+		}
+    }    
+    figure{
+    	position: relative;
+    }
+    .article_about{
+        font-family: "Roboto-Regular";
+        font-size: 18px;
+        text-align: justify;
+        line-height: 21px;
+        color: #282D2F;
+        margin-bottom: 21px;
+    }
+    input[type='radio']{
+        margin-left: 0;
+    }
+    .text_radio{
+        margin-left: 20px;
+    }
+}

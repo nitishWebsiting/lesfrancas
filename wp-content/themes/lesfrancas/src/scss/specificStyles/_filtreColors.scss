@@ -1,0 +1,50 @@
+.sectionQR_QRSliderItem, .ListGroup__question, .aside__filter, .aside__contentRight, .sectionPageFront__columnleft, .cat, .sectionSliderArticle__item, .ListGroup__item {
+    &.citoyennete {
+        background: $color3;
+        &:before {
+            content: '';
+        }
+    }
+    &.laicite {
+        background: $color7;
+        &:before {
+            content: '';
+        }
+    }
+    &.liberte {
+        background: $color8;
+        &:before {
+            content: '';
+        }
+    }
+    &.egalite {
+        background: $color9;
+        &:before {
+            content: '';
+        }
+    }
+    &.fraternite {
+        background: $color10;
+        &:before {
+            content: '';
+        }
+    }
+}
+
+.category__title, .article__title{
+    &.citoyennete {
+        color: $color3;
+    }
+    &.laicite {
+        color: $color7;
+    }
+    &.liberte {
+        color: $color8;
+    }
+    &.egalite {
+        color: $color9;
+    }
+    &.fraternite {
+        color: $color10;
+    }
+}

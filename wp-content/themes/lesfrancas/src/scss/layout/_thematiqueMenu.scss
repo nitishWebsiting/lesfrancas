@@ -1,0 +1,77 @@
+.thematiqueMenu {
+    width: 100%;
+    margin-top: 25px;
+    display: none;
+    @include breakmin($desktop-s) {
+        display: block;
+    }
+    .thematiqueMenu__lists {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        @include breakmin($desktop-s) {
+            display: flex;
+            background: #F5F5F5;
+        }
+    }
+    .menu-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 78px;
+        &:before {
+            margin-right: 15px;
+        }
+        @include breakmin($desktop-s) {
+            flex-direction: column;
+            border-right: 1px solid #000000;
+            margin-bottom: 0;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    a {
+        font-family: $fonts2;
+        font-size: 36px;
+        text-align: center;
+        line-height: 42px;
+        @include breakmin($desktop-s) {
+            font-size: 24px;
+            font-family: $fonts3;
+            font-weight: bold;
+        }
+    }
+    .sub-menu {
+        display: none;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        padding: 0;
+        width: 100%;
+        z-index: 3;
+        &.active {
+            display: flex;
+            @include FadeIn(0.5);
+        }
+        .menu-item {
+            border-right: none;
+        }
+        a {
+            color: $color2;
+            margin: auto;
+            height: 50px;
+            font-size: 13px;
+            @include breakmin($desktop){
+                font-size: 15px;
+            }
+            &:hover{
+                transition: 0s;
+                border-bottom: 9px solid white;
+            }
+        }
+    }
+}

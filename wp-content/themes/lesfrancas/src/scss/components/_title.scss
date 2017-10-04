@@ -1,0 +1,30 @@
+.partners__title {
+    font-family: $fonts2;
+    font-size: 20px;
+    text-align: center;
+    color: $color1;
+    margin-bottom: 18px;
+}
+
+.article__title {
+    font-family: $fonts3;
+    font-size: 40px;
+    text-align: center;
+    line-height: 97px;
+    /*color: #27ABD8;*/
+    margin: 0;
+    font-weight: bold;
+    @include breakmin($desktop){
+        margin: 45px 0;
+        line-height: initial;
+        font-size: 80px;
+    }
+}
+
+.ListGroup__title {
+    font-family: $fonts2;
+    font-size: 36px;
+    text-align: center;
+    color: $color1;
+    margin: 28px 0;
+}

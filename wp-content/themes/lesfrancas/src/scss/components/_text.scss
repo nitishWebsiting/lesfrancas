@@ -1,0 +1,43 @@
+.header__content {
+    .text {
+        font-family: $fonts3;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 16px;
+        color: $color1;
+        margin: 0;
+    }
+}
+
+.partners__paragraph {
+    font-family: $fonts2;
+    font-size: 16px;
+    text-align: center;
+    line-height: 19px;
+    color: $color3;
+    @include breakmin($tablet) {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+.article__content {
+    font-family: $fonts3;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 16px;
+    color: $color11;
+}
+
+.article .textContent {
+    margin-top: 15px;
+    p {
+        font-family: $fonts2;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 21px;
+        color: $color11;
+        margin-bottom: 21px;
+    }
+}

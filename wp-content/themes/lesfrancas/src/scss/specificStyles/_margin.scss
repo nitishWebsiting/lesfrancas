@@ -1,0 +1,42 @@
+.margin{
+    width: 99%;
+    margin: auto;
+}
+
+.marginTop-3 {
+    margin-top: 15px;
+    &-sm {
+        @include breakmin($tablet) {
+            margin-top: 15px;
+        }
+    }
+}
+
+
+// Margin bottom
+.marginBottom-1 {
+    margin-bottom: 5px;
+    &-sm {
+        @include breakmin($tablet) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.marginBottom-3 {
+    margin-bottom: 15px;
+    &-sm {
+        @include breakmin($tablet) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// Margin left
+.marginLeft-1 {
+    &-sm {
+        @include breakmin($tablet) {
+            margin-left: 5px;
+        }
+    }
+}

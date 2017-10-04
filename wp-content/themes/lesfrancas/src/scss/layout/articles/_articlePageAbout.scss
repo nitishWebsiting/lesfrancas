@@ -1,0 +1,30 @@
+.articlePageAbout {
+    width: 80%;
+    margin: 35px auto auto auto;
+    .articlePageAbout__title {
+        font-family: $fonts2;
+        margin: 0;
+        font-size: 19px;
+        margin-bottom: 28.5px;
+        text-align: center;
+    }
+    .articlePageAbout__content {
+        p {
+            font-family: $fonts2;
+            font-size: 15px;
+            color: $color11;
+            line-height: 22.5px;
+            margin-bottom: 22.5px;
+            text-align: justify;
+        }
+    }
+    .articlePageAbout__text {
+        font-family: $fonts2;
+        font-size: 15px;
+        color: $color11;
+        line-height: 22.5px;
+        margin-bottom: 22.5px;
+        text-align: justify;
+    }
+}
+

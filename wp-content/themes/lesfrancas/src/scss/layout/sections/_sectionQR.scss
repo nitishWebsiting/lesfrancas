@@ -1,0 +1,98 @@
+.sectionQR {
+    width: 100%;
+    height: 306.71px;
+    position: relative;
+    overflow: hidden;
+    // Question Réponse
+    .sectionQR__slider {
+        height: 100%;
+    }
+    .slick-list {
+        height: 100%;
+    }
+    .slick-track {
+        height: 100%;
+    }
+    .sectionQR_QRSliderItem {
+        background-color: $color6;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .sectionQR__title {
+        margin: 0;
+        font-family: $fonts2;
+        font-size: 74px;
+        line-height: 87px;
+        color: $color2;
+        padding-top: 45px;
+        margin-bottom: 10px;
+    }
+    .sectionQR__text {
+        font-family: $fonts3;
+        color: $color2;
+        margin-bottom: 25px;
+        font-size: 19px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @include breakmin($desktop-s){
+            font-size: 18px;
+        }
+    }
+    .sectionQR__reponseBtn {
+        color: $color8;
+        border-radius: 20px;
+        background: $color2;
+        width: 115px;
+        display: block;
+        text-align: center;
+        padding: 5px 0;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include breakmin($desktop-s){
+            left: auto;
+            right: 20px;
+            top: 60px;
+            transform: inherit;
+
+        }
+    }
+    .sectionQR__dots {
+        background-color: $color9;
+        list-style-type: none;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+        height: 27px;
+        width: 100%;
+        left: 0;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        li {
+            margin-right: 10px;
+            display: flex;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        button {
+            font-size: 0;
+            background: white;
+            border: none;
+            height: 12px;
+            width: 0;
+            border-radius: 50%;
+            outline: none;
+        }
+        .slick-active {
+            button {
+                background: black;
+            }
+        }
+    }
+}

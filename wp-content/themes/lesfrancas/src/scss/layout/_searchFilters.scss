@@ -1,0 +1,43 @@
+.searchFilters {
+    display: none;
+    .filter {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sub {
+        font-family: $fonts2;
+        font-size: 24px;
+        text-align: center;
+        color: $color1;
+        margin-bottom: 0;
+        &:after {
+            content: url($directory-img + "triangle.png");
+            margin-left: 10px;
+        }
+    }
+    .subFilter {
+        list-style-type: none;
+        padding: 0;
+        display: none;
+    }
+    .subFilter__item {
+        margin-top: 15px;
+        a {
+            font-family: $fonts3;
+            font-size: 20px;
+            text-align: center;
+            color: $color1;
+            margin-bottom: 0;
+            padding-bottom: 3px;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 2px solid $color1;
+            }
+        }
+    }
+}

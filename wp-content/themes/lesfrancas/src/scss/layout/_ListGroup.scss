@@ -1,0 +1,60 @@
+.ListGroup {
+    .ListGroup__questions {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .ListGroup__item {
+        border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+        padding: 15px 0 15px 15px;
+        &:last-child {
+            border-bottom: none;
+        }
+        @include breakmin($tablet) {
+            padding: 15px 10%;
+        }
+    }
+
+    .ListGroup__questionContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ListGroup__link {
+        text-decoration: none;
+        color: $color2;
+        font-family: $fonts2;
+        font-size: 24px;
+        width: 100%;
+        &.no-color{
+            color: $color1;
+        }
+    }
+
+    .ListGroup__arrow {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        transition: 0.5s;
+        &:before {
+            color: $color2;
+        }
+    }
+
+    .ListGroup__text {
+        font-family: $fonts2;
+        font-size: 16px;
+        color: $color2;
+        line-height: 24px;
+        margin-bottom: 0;
+        display: none;
+        margin-top: 15px;
+        cursor: pointer;
+        &--sub{
+            display: none;
+        }
+        &.no-color{
+            color: $color1;
+        }
+    }
+}

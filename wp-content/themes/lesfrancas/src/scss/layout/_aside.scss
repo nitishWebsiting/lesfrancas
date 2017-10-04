@@ -1,0 +1,62 @@
+.aside {
+    width: 100%;
+    overflow: hidden;
+    &.aside-article {
+        margin-top: 120px;
+    }
+    &__container {
+        position: relative;
+        margin-bottom: 10px;
+        height: 306px;
+    }
+    &__contentRight {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30px;
+    }
+    &__date {
+        margin: 0;
+        color: $color2;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    &__content {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 1;
+        align-items: flex-end;
+        width: 86%;
+        justify-content: center;
+        display: none;
+        @include breakmin($desktop-s) {
+            display: flex;
+        }
+    }
+    &__img {
+        height: 100%;
+    }
+    &__filter {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: 0.4;
+    }
+    &__category {
+        font-family: $fonts2;
+        font-size: 24px;
+        color: $color2;
+        &:hover {
+            color: $color2;
+            text-decoration: underline;
+        }
+    }
+}
+

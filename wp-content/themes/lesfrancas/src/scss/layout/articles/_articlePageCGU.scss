@@ -1,0 +1,25 @@
+.articlePageCGU {
+    width: 90%;
+    margin: auto;
+    .articlePageCGU__title {
+        font-size: 22px;
+        text-align: center;
+        margin: 33px 0 0 0;
+        color: $color11;
+        font-family: $fonts2;
+    }
+    h4 {
+        @extend .articlePageCGU__title;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: $fonts2;
+        margin: 30px 0 36px 0;
+    }
+    p {
+        @extend .articlePageCGU__title;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: $fonts2;
+        margin: 0;
+    }
+}

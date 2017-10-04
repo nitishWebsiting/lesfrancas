@@ -1,0 +1,16 @@
+.footer__containerMenu {
+    .footer__menu {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-item {
+
+    }
+    a {
+        font-family: $fonts3;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color12;
+    }
+}

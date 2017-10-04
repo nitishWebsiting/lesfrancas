@@ -1,0 +1,136 @@
+.thematiqueMenu {
+    .citoyennete {
+        &:before {
+            content: url($directory-img + 'Citoyennete.png');
+            @include breakmin($desktop-s) {
+                display: none;
+            }
+        }
+        a {
+            color: $color3;
+        }
+        .sub-menu {
+            background: $color3;
+        }
+        @include breakmin($desktop-s) {
+            &:hover {
+                background: $color3;
+                color: $color2;
+                transition: 0.5s;
+                a {
+                    text-decoration: none;
+                    transition: 0.5s;
+                    color: $color2;
+                }
+            }
+        }
+    }
+
+    .laicite {
+        &:before {
+            content: url($directory-img + 'Laicite.png');
+            @include breakmin($desktop-s) {
+                display: none;
+            }
+        }
+        a {
+            color: $color7;
+        }
+        .sub-menu {
+            background: $color7;
+        }
+        @include breakmin($desktop-s) {
+            &:hover {
+                background: $color7;
+                color: $color2;
+                transition: 0.5s;
+                a {
+                    text-decoration: none;
+                    transition: 0.5s;
+                    color: $color2;
+                }
+            }
+        }
+    }
+
+    .liberte {
+        &:before {
+            content: url($directory-img + 'Liberte.png');
+            @include breakmin($desktop-s) {
+                display: none;
+            }
+        }
+        a {
+            color: $color8;
+        }
+        .sub-menu {
+            background: $color8;
+        }
+        @include breakmin($desktop-s) {
+            &:hover {
+                background: $color8;
+                color: $color2;
+                transition: 0.5s;
+                a {
+                    text-decoration: none;
+                    transition: 0.5s;
+                    color: $color2;
+                }
+            }
+        }
+    }
+
+    .egalite {
+        &:before {
+            content: url($directory-img + 'Egalite.png');
+            @include breakmin($desktop-s) {
+                display: none;
+            }
+        }
+        a {
+            color: $color9;
+        }
+        .sub-menu {
+            background: $color9;
+        }
+        @include breakmin($desktop-s) {
+            &:hover {
+                background: $color9;
+                color: $color2;
+                transition: 0.5s;
+                a {
+                    text-decoration: none;
+                    transition: 0.5s;
+                    color: $color2;
+                }
+            }
+        }
+    }
+
+    .fraternite {
+        &:before {
+            content: url($directory-img + 'Fraternite.png');
+            @include breakmin($desktop-s) {
+                display: none;
+            }
+        }
+        a {
+            color: $color10;
+        }
+        .sub-menu {
+            background: $color10;
+        }
+        @include breakmin($desktop-s) {
+            &:hover {
+                background: $color10;
+                color: $color2;
+                transition: 0.5s;
+                a {
+                    text-decoration: none;
+                    transition: 0.5s;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}

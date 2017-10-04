@@ -1,0 +1,13 @@
+.menu {
+    margin-left: 15px;
+    //width: 35px;
+    display: flex;
+    flex-direction: column;
+    @include breakmin($tablet) {
+        margin-left: 35px;
+        //width: 42px;
+    }
+    @include breakmin($desktop-s) {
+        display: none;
+    }
+}

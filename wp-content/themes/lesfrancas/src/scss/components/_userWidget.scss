@@ -1,0 +1,99 @@
+.header__userWidget {
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-right: 15px;
+    @include breakmin($desktop) {
+        flex-direction: initial;
+        justify-content: initial;
+        align-items: initial;
+        position: initial;
+        margin-right: 35px;
+    }
+    &.login {
+        position: absolute;
+        top: 23px;
+        right: 0;
+        @include breakmin($desktop) {
+            width: 290px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    img {
+        width: 35px;
+        @include breakmin($tablet) {
+            width: 42px;
+        }
+    }
+    .userWidget__items {
+        display: none;
+        margin: 15px 0 0 0;
+        @include breakmin($desktop) {
+            display: block;
+            margin: 0;
+            img {
+                width: 30px;
+            }
+        }
+    }
+    .userWidget__items--acount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .acount {
+            margin-right: 0;
+        }
+    }
+    .gravatar {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    .userWidget__email {
+        display: none;
+        @include breakmin($tablet) {
+            display: block;
+        }
+    }
+}
+
+.userWidget {
+    margin: 30px 0;
+    .userWidget__lists {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-between;
+        width: 240px;
+        margin: auto;
+        @include breakmin($mobile) {
+            width: 300px;
+        }
+    }
+    .userWidget__link {
+        //display: none;
+        margin: 15px 0 0 0;
+        @include breakmin($desktop) {
+            display: block;
+            margin: 0;
+            img {
+                width: 50px;
+            }
+        }
+        .binder {
+            @include breakmin($desktop){
+                width: 60px;
+            }
+        }    
+    }
+
+
+    .userWidget__image {
+        width: 60px;
+        @include breakmin($mobile){
+            width: 50px;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.loginRegister {
+    @include breakmin($tablet) {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 745px;
+        margin: auto;
+    }
+    &__register {
+        display: none;
+        @include breakmin($tablet) {
+            display: block;
+        }
+    }
+    &__title {
+        font-family: $fonts2;
+        font-size: 36px;
+        text-align: center;
+        line-height: 54px;
+        color: $color8;
+        @include breakmin($tablet) {
+            font-family: $fonts3;
+            font-weight: bold;
+        }
+    }
+    .closeIcon {
+        margin: 0 auto 15px auto;
+        @include breakmin($tablet) {
+            display: none;
+        }
+    }
+    &__switchForm {
+        font-family: $fonts2;
+        font-size: 16px;
+        text-align: center;
+        color: $color8;
+        margin-top: 20px;
+        text-decoration: underline;
+        display: none;
+    }
+    &__lrContainer {
+        background: $color17;
+        padding: 35px 0;
+        margin-top: 35px;
+        @include breakmin($tablet) {
+            background: none;
+        }
+    }
+    .um-login {
+        margin-bottom: 0px !important;
+    }
+    .um-form {
+        form {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    .um-field-area {
+        &:before {
+            content: "";
+            border-right: 2px solid #000000;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .um-field-c {
+        .um-field-area {
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .um-form-field {
+        border: none;
+        border-bottom: 2px solid $color1;
+        background: none !important;
+    }
+    .um-button {
+        background-color: #27ABD8 !important;
+        border: 2px solid #27ABD8 !important;
+        border-radius: 26px !important;
+        font-family: $fonts2 !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 10px 0 0 0 !important;
+    }
+    .um-field-checkbox-option, .um-field-radio-option {
+        color: #27ABD8 !important;
+    }
+    .um-field-label{
+        display: none;
+    }
+    &__cguLink {
+        font-family: $fonts2;
+        font-size: 15px;
+        color: $color8;
+        margin: 23px 0 0 0;
+        text-align: center;
+        a {
+            font-family: $fonts2;
+            font-size: 15px;
+            color: $color8;
+            text-decoration: underline;
+        }
+    }
+}

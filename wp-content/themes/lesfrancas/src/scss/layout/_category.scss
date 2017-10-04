@@ -1,0 +1,24 @@
+.categoryContainer {
+    .category__title {
+        margin: 32px 0;
+        font-family: $fonts3;
+        font-weight: bold;
+        font-size: 42px;
+        text-align: center;
+        color: $color3;
+    }
+    .category__text {
+        font-family: $fonts3;
+        font-size: 15px;
+        line-height: 16px;
+        color: $color15;
+    }
+}
+
+.cat{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}

@@ -1,0 +1,36 @@
+.logo {
+    font-family: $fonts1;
+    font-size: 25px;
+    text-align: center;
+    line-height: 26px;
+    margin: 0;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include breakmin($tablet) {
+        font-size: 37px;
+    }
+    @include breakmin($desktop-s) {
+        width: initial;
+    }
+    .logo__link {
+        color: $color5;
+        text-decoration: none;
+        &:hover {
+            color: $color5;
+        }
+        @include breakmin($desktop-s) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .logo__img {
+        display: none;
+        @include breakmin($desktop-s) {
+            display: block;
+        }
+    }
+}

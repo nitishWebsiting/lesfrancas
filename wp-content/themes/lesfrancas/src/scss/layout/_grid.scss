@@ -1,0 +1,11 @@
+.line {
+    @include breakmin($tablet) {
+        display: flex;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

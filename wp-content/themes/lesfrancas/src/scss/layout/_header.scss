@@ -1,0 +1,19 @@
+.header {
+    margin-top: 15px;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        height: 95px;
+    }
+    &__content {
+        margin: 15px 0;
+        text-align: center;
+    }
+    &__searchContainer {
+        @include breakmin($desktop-s) {
+            display: none;
+        }
+    }
+}

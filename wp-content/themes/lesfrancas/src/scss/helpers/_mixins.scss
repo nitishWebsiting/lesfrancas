@@ -1,0 +1,75 @@
+// font-face: Défini une nouvelle font-face
+// $font: le nom du fichier font
+// $name: le nom que l'on veut donner à la nouvelle font
+@mixin font-face($font, $name) {
+    @font-face {
+        font-family: $name;
+        src: url($directory-fonts + $font + '/' + $font + '.eot');
+        src: url($directory-fonts + $font + '/' + $font + '.eot?#iefix') format('embedded-opentype'),
+        url($directory-fonts + $font + '/' + $font + '.woff') format('woff'),
+        url($directory-fonts + $font + '/' + $font + '.ttf') format('truetype'),
+        url($directory-fonts + $font + '/' + $font + '.svg#' + $name) format('svg');
+    }
+}
+
+// breakmin: Défini un responsive min
+// $size: La taille à laquelle le responsive va s'éffectuer
+@mixin breakmin($size) {
+    @media all and (min-width: $size) {
+        @content;
+    }
+}
+
+// breakmax: Défini un responsive max
+// $size: La taille à laquelle le responsive va s'éffectuer
+@mixin breakmax($size) {
+    @media all and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin displayFlex(){
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+@mixin alignItem(){
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+@mixin outline(){
+    outline: none;
+}
+
+@mixin keyFrameFadeIn(){
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+
+@mixin FadeIn($time){
+    -webkit-animation: fadein $time + s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein $time + s; /* Firefox < 16 */
+    -ms-animation: fadein $time + s; /* Internet Explorer */
+    -o-animation: fadein $time + s; /* Opera < 12.1 */
+    animation: fadein $time + s;
+}
+
+@mixin stylePlaceholder(){
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        @content;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        @content;
+        @content;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        @content;
+        @content;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        @content;
+    }
+}

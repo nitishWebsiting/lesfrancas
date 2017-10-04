@@ -1,0 +1,18 @@
+.breadcrumbs{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 15px 15px;
+    li{
+        font-family: $fonts2;
+        font-size: 14px;
+        color: $color8;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    a{
+        font-family: $fonts2;
+        font-size: 14px;
+        color: $color8;
+    }
+}

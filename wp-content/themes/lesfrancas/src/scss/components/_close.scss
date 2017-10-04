@@ -1,0 +1,31 @@
+.closeIcon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: block;
+    margin: 24px auto 0 auto;
+    span {
+        width: 100%;
+        height: 2px;
+        background: $color8;
+        box-sizing: border-box;
+        &:nth-child(1) {
+            transform: rotate(45deg);
+            position: absolute;
+            top: 8px;
+        }
+        &:nth-child(2) {
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 8px;
+        }
+    }
+}
+
+.contactPopup__closeIcon {
+    @extend .closeIcon;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}

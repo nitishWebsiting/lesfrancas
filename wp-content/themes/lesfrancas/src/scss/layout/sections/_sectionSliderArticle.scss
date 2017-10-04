@@ -1,0 +1,89 @@
+// Slider Article
+.sectionSliderArticle {
+    width: 100%;
+    height: 306.71px;
+    position: relative;
+    overflow: hidden;
+    @include breakmin($tablet) {
+        width: 99.8%;
+        margin: 0;
+        margin-left: 5px;
+    }
+    .slick-list {
+        height: 100%;
+    }
+    .slick-track {
+        height: 100%;
+    }
+    .sectionSliderArticle__header {
+        z-index: 2;
+        position: relative;
+    }
+    .sectionSliderArticle__item {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .sectionSliderArticle__title {
+        font-family: $fonts2;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        color: $color2;
+        text-align: center;
+        margin-top: 50px;
+        a {
+            font-family: $fonts2;
+            font-size: 18px;
+            font-weight: bold;
+            color: $color2;
+            text-align: center;
+        }
+    }
+    .sectionSliderArticle__content {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 1;
+    }
+    .sectionSliderArticle__thumbnail {
+        @extend .sectionSliderArticle__content;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.4;
+    }
+    .sectionSliderArticle__date {
+        font-family: $fonts2;
+        font-size: 24px;
+        line-height: 28px;
+        color: $color2;
+        text-align: center;
+        width: 30px;
+        display: block;
+        margin: 0;
+        margin-left: 15px;
+
+    }
+    .sectionSliderArticle__categorie {
+        font-family: $fonts2;
+        font-size: 24px;
+        color: $color2;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .sectionSliderArticle__infos {
+        color: #fff;
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+        padding-top: 10px;
+    }
+}

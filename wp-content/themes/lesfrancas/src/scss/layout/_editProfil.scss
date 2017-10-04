@@ -1,0 +1,64 @@
+.editProfil {
+    form {
+        @include breakmin($um-form-tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .um-account-side {
+        @include breakmin($um-form-tablet) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .um-account-meta{
+            width: 125px;
+        }
+        ul {
+            @include breakmin($um-form-tablet) {
+                width: 290px;
+                display: flex;
+                justify-content: space-between;
+            }
+            //@include breakmin($um-form-tablet-l) {
+            //    width: 290px;
+            //    display: block;
+            //}
+        }
+        li {
+            @include breakmin($um-form-tablet) {
+                width: 33%;
+            }
+            //@include breakmin($um-form-tablet-l) {
+            //    width: initial;
+            //}
+        }
+    }
+    .um-account-meta-img-b {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none !important;
+        }
+        .gravatar{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+    .um-header {
+        margin: auto;
+    }
+    .um-profile-photo a.um-profile-photo-img img {
+        border-radius: 50%;
+    }
+    .um-profile-photo-overlay {
+        border-radius: 50%;
+    }
+    .um-account-meta-img-b .gravatar, .um-profile-edit-a {
+        display: none;
+    }
+}

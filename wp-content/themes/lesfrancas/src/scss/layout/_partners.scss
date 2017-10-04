@@ -1,0 +1,12 @@
+.partners {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 275px;
+    margin: auto;
+    @include breakmin($tablet) {
+        width: 80%;
+    }
+}

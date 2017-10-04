@@ -1,0 +1,16 @@
+.linkContainerArticlePageAbout {
+    margin: 20px 0;
+    .linkContainerArticlePageAbout_title {
+        font-family: $fonts3;
+        font-size: 20px;
+        text-align: center;
+        color: $color1;
+        font-weight: bold;
+        margin: 0 0 15px 0;
+    }
+    .linkContainerArticlePageAbout__link {
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+}
